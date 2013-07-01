@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    
+	<HttpClient maxConPerHost="150" conTimeOutMs="2000" soTimeOutMs="2000" maxSize="1048576" minThread="10" maxThread="300" />
+	
+    <UuidFactory>
+        <UuidCreator minSpareConnections="2" maxSpareConnections="10" primitiveAsString="true" failover="true"
+            serverPort="rm6052.apollo.grid.sina.com.cn:6052" />
+		<apiIdcIdSet value="6,7,8,9,10,11" />
+		<localIdcIdSet value="6,7" />
+    </UuidFactory>
+    
+</service>

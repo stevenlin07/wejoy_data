@@ -1,0 +1,10 @@
+package weibo;
+
+option java_package = "com.weibo.wesync.data.model";
+option java_outer_classname = "MetaMessagePBWrap";
+
+message MetaMessage {
+	required string id = 101;
+	required bytes meta = 102;		
+	required string type = 103;
+}

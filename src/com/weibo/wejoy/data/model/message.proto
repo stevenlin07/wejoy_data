@@ -1,0 +1,13 @@
+package weibo;
+
+option java_package = "com.weibo.wesync.data.model";
+option java_outer_classname = "MessageWrap";
+
+message Message {
+	required uint64 msgid = 101;
+	required uint64 fromuid = 102;
+	required uint64 touid = 103;				
+	required uint32 type = 104;
+	required string content = 105;		
+	required uint64 ctime = 106;
+}

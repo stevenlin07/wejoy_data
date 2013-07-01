@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mcq>
+
+    <MsgBoxMcqWriter readThreadCountEachMcq="5" readCountOnce="100" waitTimeOnce="100"
+                writeKey="openapi_wesync_dm_test" />
+
+    <McqWriterClients>
+        <McqClient minSpareConnections="2" maxSpareConnections="10" compressEnable="false"
+            serverPort="10.210.230.50:22201"/>
+    </McqWriterClients>
+
+
+    <MsgBoxMcqProcessor readThreadCountEachMcq="5" readCountOnce="100" waitTimeOnce="100"
+                readKey="dm_wesync_test" />
+
+    <McqProcessorClients>
+            <McqClient minSpareConnections="2" maxSpareConnections="10" compressEnable="false"
+                serverPort="10.210.230.50:22201"/>
+        </McqProcessorClients>
+
+</mcq>
